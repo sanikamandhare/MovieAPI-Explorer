@@ -1,0 +1,166 @@
+/* Your existing CSS styles */
+
+/* Popup form style */
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5 url('movie 4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    background: rgba(2, 28, 113, 0.9); /* Adjust opacity as needed */
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.search-container input,
+.search-container button {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-container input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ddd;
+}
+
+.search-container button {
+    border-radius: 0 20px 20px 0;
+    background: yellow;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid #ddd;
+}
+
+.search-container button:hover {
+    background: rgb(218, 167, 15);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Adjust as needed */
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px;
+}
+
+.movie-poster img {
+    height: 250px; /* Adjust as needed */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+.movie-info {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: rgba(7, 25, 107, 0.9); /* Adjust opacity as needed */
+    color: white;
+    padding-block: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Responsive Code */
+@media screen and (max-width: 950px) {
+    .movie-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search-container {
+        margin-top: 12px;
+    }
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-container input[type=text], 
+.form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, 
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-container .btn:hover {
+    background-color: #0056b3;
+}
+
+.form-container .cancel {
+    background-color: #dc3545;
+}
+
+/* End of popup form style */
